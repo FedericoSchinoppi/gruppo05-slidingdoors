@@ -1,0 +1,661 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  min-height: 1280px;
+  color: #000000;
+  font-size: 24px;
+}
+
+#scrolly {
+  display: relative;
+  height:3000px;
+  margin-left: 0px;
+  width: fit-content;
+}
+
+svg{
+  position: absolute;
+  margin-left:0px;
+}
+
+svg:last-of-type{
+  width: auto;
+  left: auto;
+}
+
+/* css delle due legende*/
+
+#legenda_sx{
+  height: 70%;
+  left:60px;
+  bottom: 220px;
+  position: fixed;
+}
+.legenda {
+  position: fixed;
+  transition: all .3s;
+}
+.hide {
+  opacity:0;
+ 
+}
+.show {
+  opacity:1;
+
+}
+#legenda_dx{
+  height: 70%;
+  right: 60px;
+  bottom: 220px;
+  position: fixed;
+}
+#linea_tempo{
+  position: fixed;
+  width: 68%;
+  left: 235px;
+  top: 450px;
+}
+
+
+/* css della barra scroll*/
+
+::-webkit-scrollbar {
+  width: 0;
+}
+#scrollPath {
+  position: fixed;
+  top: 50px;
+  right: 90px;
+  width: 15px;
+  height: 100%;
+  max-height: 540px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background: rgba(255,255,255,0.05);
+}
+#scrollbar {
+  position: fixed;
+  top: 50px;
+  right: 90px;
+  width: 15px;
+  height: 100%;
+  max-height: 540px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background: #F5AD46;
+}
+
+/* CSS DIALOGHI */
+
+#ascensored{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+#licenziatad{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+#tradimentod{
+  left: 70px;
+  top: 630px;
+  position: fixed;
+  width: 90%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+#incontrosinistrojamesmetrod{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+#sospettocomportamentod{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#cacciatod{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#pubd{
+  left: 70px;
+  top: 630px;
+  position: fixed;
+  width: 90%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#passaggiod{
+  left: 70px;
+  top: 630px;
+  position: fixed;
+  width: 90%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#docciad{
+  left: 70px;
+  top: 630px;
+  position: fixed;
+  width: 90%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+
+
+
+
+
+
+#sospettobrandyd{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+#propostad{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#incontrodestrad{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+#bibliod{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#umiliazioned{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#uscitad{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#discussioned{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#businessd{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#tentativodestrad{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#regatad{
+  left: 70px;
+  top: 630px;
+  position: fixed;
+  width: 90%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#parrucchiered{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+#baciod{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#dorsetd{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#sviened{
+  left: 90px;
+  top: 630px;
+  position: fixed;
+  width: 80%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#confrontobaciojerryd{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#tentativod{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#confrontoambiguojamesd{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#sospettobrandyvomitared{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#incontrosinistro{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#sospettomazzodirosed{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#colloquiod{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+
+
+
+#gravidanzasinistrad{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#lydiad{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#gravidanzadestrad{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#ponted{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+} 
+
+#incidented{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 90%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#morted{
+  left: 80px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#separazioned{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+#ascensorefinaled{
+  left: 800px;
+  top: 630px;
+  position: fixed;
+  width: 40%;
+  transition: 1s;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+
+
+
+
+
+
+
+@media (min-width: 840px) {
+  .nav__examples {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
